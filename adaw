@@ -1,0 +1,29 @@
+[33mcommit 1ea42a6d4bef44f30bf189af59be775eb641b637[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Carlos Valdiero <carlos_valdiero@hotmail.com>
+Date:   Thu Nov 21 17:41:24 2019 -0300
+
+    edit routes.js, created Sessioncontroller.js and model User.js
+
+[33mcommit f3ef73e28cada0b067ce1157c546a3e7d8fd66e9[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Carlos Valdiero <carlos_valdiero@hotmail.com>
+Date:   Wed Nov 20 16:52:04 2019 -0300
+
+    edited server.js and routes.js, install mongoose and dotenv, configured connection MongoBD in .env
+
+[33mcommit 7e79eca3f962036b0933d8148a8c1712d12bd123[m
+Author: Carlos Valdiero <carlos_valdiero@hotmail.com>
+Date:   Wed Nov 20 15:58:40 2019 -0300
+
+    edit package.json - add script dev
+
+[33mcommit ff641f303966e41f6f4d0d9a5253c71c15070374[m
+Author: Carlos Valdiero <carlos_valdiero@hotmail.com>
+Date:   Wed Nov 20 15:53:38 2019 -0300
+
+    create files routes.js and server.js, install nodemon
+
+[33mcommit b69ca1b77042b42cc7b8f2d4430df04da1bc85f2[m
+Author: Carlos Valdiero <carlos_valdiero@hotmail.com>
+Date:   Wed Nov 20 15:19:26 2019 -0300
+
+    initial commit
