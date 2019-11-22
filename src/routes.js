@@ -7,6 +7,7 @@ routes.get('/',(req,res) =>{
    return res.send("hello word");
 });
 
-routes.post('/users',SessionController.store);
+routes.post('/register',SessionController.store);
+routes.post('/login',SessionController.show);
 
 module.exports = routes;
