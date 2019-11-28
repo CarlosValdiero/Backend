@@ -8,8 +8,6 @@ const app = express();
 mongoose.connect(process.env.DATABASE_CONNECTION_STRING, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
-    useFindAndModify: true,
-    useCreateIndex: true
 });
 
 const db = mongoose.connection;
