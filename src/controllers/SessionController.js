@@ -1,6 +1,12 @@
 const User = require('../models/User');
 const jwt = require('jsonwebtoken');
 
+function generateToken(params = {}){
+    return jwt.sign({params },process.env.TOKEN_SECREAT, {
+        expiresIn:86400,
+    });
+}
+
 
 module.exports ={
 
@@ -16,6 +22,10 @@ module.exports ={
                 password
             });
         }
+
+        user.password = undefined;
+        
+        res.header("user_token",generateToken({_id:user._id}));
 
         return res.json(user);
     },
@@ -36,9 +46,7 @@ module.exports ={
         }
 
     
-        const token = await jwt.sign({_id:user._id},process.env.TOKEN_SECREAT);
-        
-        res.header("user_token",token);
+        res.header("user_token",generateToken({_id:user._id}));
         
 
         return res.status(200).send("ok");
@@ -65,9 +73,7 @@ module.exports ={
 
         user.updatePassword(password);
 
-        const user_token = await jwt.sign({_id:user._id},process.env.TOKEN_SECREAT);
-
-        res.header("user_token",user_token);
+        res.header("user_token",generateToken({_id:user._id}));
 
         return res.status(200).send("ok");        
 

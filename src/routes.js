@@ -10,6 +10,9 @@ routes.get('/',(req,res) =>{
 
 routes.post('/register',SessionController.store);
 routes.post('/login',SessionController.show);
+routes.post('/restorePassword',SessionController.update);
+
 routes.post('/device',DeviceController.store);
+routes.get('/device',DeviceController.index);
 
 module.exports = routes;
